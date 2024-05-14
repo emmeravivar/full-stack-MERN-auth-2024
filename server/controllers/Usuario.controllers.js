@@ -38,6 +38,7 @@ const createNewUser = async (req, res) => {
 };
 
 const authUser = async (req, res) => {
+  console.log('LYENDO DESDE...');
   //Traemos las variables
   const { email, password } = req.body;
 

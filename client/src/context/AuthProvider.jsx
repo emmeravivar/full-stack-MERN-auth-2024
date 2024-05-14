@@ -15,6 +15,7 @@ const AuthProvider = ({ children }) => {
       console.log('Entrando aquí... =>', token);
 
       if (!token) {
+        console.log('Leyendo aqui..');
         setLoading(false);
         return;
       }

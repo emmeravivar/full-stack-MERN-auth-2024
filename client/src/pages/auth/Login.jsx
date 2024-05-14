@@ -23,6 +23,7 @@ const Login = () => {
 
     try {
       const { data } = await sendLogin({ email, password });
+      console.log('Leeyndo', data);
       setAlert({});
       localStorage.setItem('token', data.token);
       setAuth(data);
